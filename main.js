@@ -18,14 +18,17 @@ setInterval(() => {
 	let currentMinutes = date.getMinutes() < 10 ? `0${date.getMinutes()}` : `${date.getMinutes()}`;
 	let currentSeconds = date.getSeconds() < 10 ? `0${date.getSeconds()}` : `${date.getSeconds()}`;
 
+	if (date.getHours() < 12 && date.getHours() != 0) {
 
-	if (date.getHours() < 12 && date.getHours() < 10) {
-
-		currentTime.innerHTML = `0${currentHours}:${currentMinutes}:${currentSeconds} am`; 
-
-	}else if (date.getHours() < 12 && date.getHours() >= 10) {
-		
 		currentTime.innerHTML = `${currentHours}:${currentMinutes}:${currentSeconds} am`; 
+
+	}else if (date.getHours() === 0) {
+
+		currentTime.innerHTML = `12:${currentMinutes}:${currentSeconds} am`; 
+
+	}else if (date.getHours() === 12){
+
+		currentTime.innerHTML = `12:${currentMinutes}:${currentSeconds} pm`; 
 
 	}else if (date.getHours() >= 12 && date.getHours() - 12 < 10){
 
