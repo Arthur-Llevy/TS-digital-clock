@@ -48,3 +48,40 @@ fieldset {
   margin: 0 0 0 12px;
   font-size: 21px;
 }
+
+@media screen and (max-width: 402px) {
+
+  fieldset {
+	border: 1px solid #21FF52;
+	width: 95%;
+	height: 120px;
+	border-radius: 4px;
+	position: relative;
+	box-shadow: 3px 4px 9px #006416;
+  }
+
+  .title {
+  	color: #21FF52;
+  	position: absolute;
+  	top: -21px;
+  	background-color: #141414;
+  	left: 12px;
+    font-weight: bold;
+	font-size: 7vw;
+  }
+
+  .current-time {
+    color: #21FF52;
+    font-size: 14vw;
+    margin: 12px 0 0 12px;
+    font-weight: bold;
+  }
+
+  .current-date {
+    color: #21FF52;
+    font-weight: 600;
+    margin: 0 0 0 12px;
+    font-size: 6vw;
+  }
+
+}
