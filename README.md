@@ -1,7 +1,7 @@
-# JS-digital-clock
+# TS-digital-clock
 
 This digital clock made in TypeScript aimed to test programming logic and my skills with the language.
-To view it, simply click on this [link](https://arthur-llevy.github.io/JS-digital-clock/).
+To view it, simply click on this [link](https://arthur-llevy.github.io/TS-digital-clock/).
 
 
 ---
